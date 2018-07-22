@@ -44,12 +44,50 @@
       <option value="preferNo">Prefer not to say</option>
       <option value="other">Other</option>
     </select>
-    <label for="userRating" id="userRating-label">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-        <input type="radio" name="userRating" value="Definitely"> Definitely
-        <input type="radio" name="userRating" value="Maybe"> Maybe
-        <input type="radio" name="userRating" value="Not sure">Not sure
-
-
+    <fieldset>
+        <legend> * How likely is that you would recommend freeCodeCamp to a friend? </legend>
+            <input type="radio" name="userRating" id="Definitely
+            " value="Definitely">
+            <label for="Definitely">Definitely</label>
+            <input type="radio" name="userRating" id="Maybe" value="Maybe">
+            <label for="Maybe">Maybe</label>
+            <input type="radio" name="userRating" id="Not Sure" value="sure">
+            <label for="Not Sure">Not Sure</label>
+        </fieldset>
+        <fieldset>
+            <legend>Things that should be improved in the future (Check all that apply):</legend>
+                    <input type="checkbox" 
+                           name="Front-end Projects" 
+                           id="Front-end Projects" 
+                           value="Front-end projects">
+                    <label for="Front-end Projects">Front-end Projects</label>
+                    <input type="checkbox" 
+                           name="Back-end projects" 
+                           id="Back-end projects"
+                           value="Back-end projects">
+                    <label for="Back-end projects">Back-end Projects</label>
+                    <input type="checkbox" 
+                           name="Data Visualization" 
+                           id="Data Visualization"
+                           value="Data Visualization">
+                    <label for="Data Visualization">Data Visualization</label>
+                    <input type="checkbox"
+                           name="Challenges"
+                           id="Challenges"
+                           value="Challenges">
+                    <label for="Challenges">Challenges</label>
+                    <input type="checkbox"
+                           name="Open Source Community"
+                           id="Open Source Community"
+                           value="Open Source Community">
+                    <label for="Open Source Community">Open Source Community</label>
+                    <input type="checkbox"
+                        name="Gitter Help Room"
+                        id="Gitter Help Room"
+                        value="Gitter Help Rooms">
+                    <label for="Gitter Help Rooms">Gitter Help Rooms</label>
+            </fieldset>
+            
 </form>
 </body>
 </html>
