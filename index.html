@@ -28,7 +28,7 @@
         required
         placeholder="Please enter email"
         >
-    <label id="number-label" for="number">*Age</label>
+    <label id="number-label" for="number">*Age&nbsp; </label>
     <input 
         type="number"
         id="number"
@@ -46,48 +46,65 @@
     </select>
     <fieldset>
         <legend> How likely is that you would recommend freeCodeCamp to a friend? </legend>
-            <input type="radio" name="userRating" id="Definitely
-            " value="Definitely">
-            <label for="Definitely">Definitely</label>
-            <input type="radio" name="userRating" id="Maybe" value="Maybe">
-            <label for="Maybe">Maybe</label>
-            <input type="radio" name="userRating" id="Not Sure" value="sure">
-            <label for="Not Sure">Not Sure</label>
+            <div>
+                <label for="Definitely">Definitely</label>
+                <input type="radio" name="userRating" id="Definitely" value="Definitely">
+            </div>
+            <div>
+                <label for="Maybe">Maybe</label>
+                <input type="radio" name="userRating" id="Maybe" value="Maybe">
+            </div>
+            <div>
+                <label for="Not sure">Not sure</label>
+                <input type="radio" name="userRating" id="Not Sure" value="sure">
+            </div>
         </fieldset>
         <fieldset>
             <legend>Things that should be improved in the future<br> (Check all that apply):</legend>
+                <div>
+                    <label for="Front-end Projects">Front-end Projects</label>
                     <input type="checkbox" 
                            name="Front-end Projects" 
                            id="Front-end Projects" 
                            value="Front-end projects">
-                    <label for="Front-end Projects">Front-end Projects</label>
+                    </div>
+                    <div>
+                    <label for="Back-end projects">Back-end Projects</label>
                     <input type="checkbox" 
                            name="Back-end projects" 
                            id="Back-end projects"
                            value="Back-end projects">
-                    <label for="Back-end projects">Back-end Projects</label>
-                    <input type="checkbox" 
+                    </div>
+                    <div>
+                        <label for="Data Visualization">Data Visualization</label>
+                        <input type="checkbox" 
                            name="Data Visualization" 
                            id="Data Visualization"
                            value="Data Visualization">
-                    <label for="Data Visualization">Data Visualization</label>
+                    </div>
+                    <div>
+                    <label for="Challenges">Challenges</label>
                     <input type="checkbox"
                            name="Challenges"
                            id="Challenges"
                            value="Challenges">
-                    <label for="Challenges">Challenges</label>
+                    </div>
+                    <div>
+                    <label for="Open Source Community">Open Source Community</label>
                     <input type="checkbox"
                            name="Open Source Community"
                            id="Open Source Community"
                            value="Open Source Community">
-                    <label for="Open Source Community">Open Source Community</label>
+                    </div>
+                    <div>
+                    <label for="Gitter Help Rooms">Gitter Help Rooms</label>
                     <input type="checkbox"
                         name="Gitter Help Room"
                         id="Gitter Help Room"
                         value="Gitter Help Rooms">
-                    <label for="Gitter Help Rooms">Gitter Help Rooms</label>
+                    </div>
             </fieldset>
-            <label for="additionalComments">
+            <label for="additionalComments" id="additionalCommentsLabel">
                 Additional comments
             </label>
             <textarea id="additionalComments" rows="4">
