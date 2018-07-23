@@ -2,11 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-size: 24px;
+    background-color: #660099;
 }
 
 form {
     max-width: 960px;
     margin: 0 auto;
+    border-radius: 5px;
+    background-color: #934CB7;
 }
 label,input {
     grid-column: 1/5;
@@ -71,5 +74,9 @@ textarea {
     }
     textarea {
         grid-column: 3/4;
+    }
+    #submit {
+        max-width: 125px;
+        margin: 0 auto;
     }
 }
