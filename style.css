@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-size: 24px;
     background-color: #660099;
+    box-sizing: border-box;
 }
 
 form {
@@ -14,7 +15,12 @@ form {
 label,input {
     grid-column: 1/5;
 }
-
+input {
+    padding: 5px;
+}
+input:focus {
+    outline: 2px solid red;
+}
 #title, #description {
     text-align: center;
     grid-column: 1/5;
@@ -39,6 +45,11 @@ fieldset div label {
     order: 99999;
     padding-left: 10px;
 }
+
+select {
+    font-size: 20px;
+}
+
 form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -47,13 +58,19 @@ form {
 
 textarea {
     grid-column: 1/5;
+    resize: none;
+    padding: 5px;
 }
 
 #submit {
     grid-column: 1/5;
     font-size: 100%;
 }
-
+::placeholder {
+    opacity: 1;
+    color: rgb(100,100,100);
+    font-style: italic;
+}
 @media screen and (min-width: 520px){
     label {
         grid-column: 2/3;
