@@ -58,7 +58,7 @@ form {
 
 textarea {
     grid-column: 1/5;
-    resize: none;
+    resize: vertical;
     padding: 5px;
 }
 
@@ -86,8 +86,6 @@ textarea {
         grid-column: 2/4;
         margin: 0;
         padding: 0;
-    }
-    fieldset div {
     }
     textarea {
         grid-column: 3/4;
